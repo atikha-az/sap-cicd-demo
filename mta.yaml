@@ -10,5 +10,8 @@ modules:
     parameters:
       buildpack: nodejs_buildpack
       memory: 256M
+      no-route: false
+      routes:
+        - route: sap-cicd-demo-srv-${space}.${default-domain}
     build-parameters:
       builder: npm
