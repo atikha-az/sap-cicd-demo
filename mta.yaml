@@ -1,6 +1,6 @@
 _schema-version: "3.1"
 ID: sap-cicd-demo
-version: 1.0.0
+version: 1.0.1
 description: "Mock CAP app for CI/CD demo"
 
 modules:
@@ -9,7 +9,8 @@ modules:
     path: .
     parameters:
       buildpack: nodejs_buildpack
-      memory: 256M
+      memory: 128M
       no-route: true
+      health-check-type: none
     build-parameters:
       builder: npm
